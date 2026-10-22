@@ -1,49 +1,97 @@
-# Railway Reservation System
+# 🚆 Railway Reservation System
 
-**Java Internship Project** – DLK Technologies (17 June 2026 – 17 July 2026)
-**Intern:** Mahalakshmi T (Reg. No. 510423104303), B.E. CSE, Arunai Engineering College
+A Java-based Railway Reservation System for managing train details, passenger bookings, ticket cancellation, and PNR status.
 
-## Abstract
-A console-based Java application that lets passengers search trains, book and cancel tickets,
-and check PNR status. Data (trains, bookings, PNR counter) is saved to disk, so it persists
-between runs.
+## 🌐 Live Demo
 
-## Features
-1. View all trains / search by source and destination
-2. Book tickets (validation: age, seat limit 1–6, no past dates, seat availability)
-3. Cancel tickets (seats are released, 80% refund)
-4. PNR status check and list of all bookings
-5. Data persistence using file handling
+**[View Railway Reservation System](https://poochi005.github.io/RailwayReservationSystem/)**
 
-## Java concepts used (from the 30-day syllabus)
-| Concept | Where |
-|---|---|
-| Classes, Encapsulation, Constructors | `model/Train`, `model/Booking` |
-| Packages & access modifiers | `railway.model`, `.service`, `.util`, `.exception` |
-| Exception handling (custom exception) | `ReservationException` |
-| Collections & Generics | `LinkedHashMap`, `List`, `DataStore.load<T>` |
-| File handling (serialization) | `util/DataStore` |
-| Multithreading / synchronization | `synchronized book()` and `cancel()` |
-| Control statements, Strings, I/O | `Main` menu with `switch` |
+## 📌 About the Project
 
-## Project structure
-```
-src/railway/Main.java
-src/railway/model/{Train,Booking}.java
-src/railway/service/ReservationService.java
-src/railway/exception/ReservationException.java
-src/railway/util/DataStore.java
-```
+The Railway Reservation System is an educational software project that simulates basic railway ticket reservation operations. It demonstrates Java programming, object-oriented design, booking management, and data persistence.
 
-## Run
-Requires JDK 17+.
-```
-./build.sh
-```
-or
-```
-mkdir out && javac -d out $(find src -name "*.java") && java -cp out railway.Main
+## ✨ Features
+
+- Train search and information
+- Passenger details management
+- Ticket booking
+- PNR generation and status checking
+- Ticket cancellation
+- Seat availability management
+- Fare and refund calculations
+- Persistent local data storage
+- Exception handling and input validation
+
+## 🛠️ Technologies Used
+
+- Java
+- Object-Oriented Programming (OOP)
+- Java Serialization / File Storage
+- Git and GitHub
+- GitHub Pages
+
+## 📂 Project Structure
+
+```text
+RailwayReservationSystem/
+├── data/
+├── src/
+│   └── railway/
+├── .gitignore
+├── README.md
+└── build.sh
 ```
 
-## Future enhancements
-JDBC + MySQL storage (Day 19), Swing GUI (Day 20), Spring Boot REST API (Day 25).
+## ⚙️ Requirements
+
+- JDK 17 or compatible version
+- Terminal or Java-compatible IDE
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Poochi005/RailwayReservationSystem.git
+   ```
+
+2. Open the project directory:
+
+   ```bash
+   cd RailwayReservationSystem
+   ```
+
+3. Follow the compilation and execution commands in `build.sh`.
+
+4. Run the application and follow the menu instructions.
+
+## 🎯 Project Objectives
+
+- Simplify basic reservation operations.
+- Manage train and passenger information.
+- Demonstrate Java OOP concepts.
+- Implement booking and cancellation workflows.
+- Practise data storage and exception handling.
+
+## 🔮 Future Enhancements
+
+- Responsive web interface
+- MySQL database integration
+- User authentication
+- Date-specific seat availability
+- Online payment integration
+- Downloadable tickets and booking history
+
+## ⚠️ Disclaimer
+
+This is an educational project and is not an official IRCTC or Indian Railways booking service. The demo does not guarantee real-time train availability or actual ticket reservations.
+
+## 👨‍💻 Author
+
+**Poochi005**
+
+GitHub: https://github.com/Poochi005
+
+## 📄 License
+
+For educational use. Add a license file to define redistribution and usage permissions.
